@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff9f7;
+    color: #403348;
+}
+
+nav {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px #eadde5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h2 {
+    color: #a66b91;
+}
+
+nav a {
+    text-decoration: none;
+    color: #59465c;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c17ca6;
+}
+
+.hero {
+    min-height: 580px;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    background: linear-gradient(120deg, #f8e5ef, #fff8ee);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    color: #ac7096;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #b77b9f;
+}
+
+.hero h3 {
+    margin-bottom: 15px;
+    color: #946b89;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: 12px 23px;
+    border-radius: 25px;
+    background: #a86f93;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 8px 5px 8px 0;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #784b6b;
+}
+
+.second {
+    background: #70566f;
+}
+
+.flower {
+    text-align: center;
+    background: white;
+    padding: 12px;
+    border-radius: 170px 170px 20px 20px;
+    box-shadow: 0 8px 25px #d9bbce;
+}
+
+.flower img {
+    width: 300px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 170px 170px 15px 15px;
+}
+
+.flower h3 {
+    padding: 12px;
+    color: #a86f93;
+}
+
+.page-header {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(120deg, #f8e5ef, #fff5eb);
+}
+
+.page-header h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #8e5d80;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #816c7e;
+}
+
+.resume-container,
+.biodata-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.resume-card,
+.biodata-details {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 20px #ebdce5;
+}
+
+.resume-card h2,
+.biodata-details h2 {
+    color: #a66b91;
+    margin-bottom: 15px;
+    font-family: Georgia, serif;
+}
+
+.resume-card p {
+    margin: 9px 0;
+    line-height: 1.7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ead9e4;
+    padding: 13px;
+    text-align: left;
+}
+
+th {
+    background: #f4e4ed;
+    color: #79536f;
+}
+
+tr:nth-child(even) {
+    background: #fff8fb;
+}
+
+.biodata-photo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.biodata-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #efd6e5;
+}
+
+.biodata-photo h2 {
+    color: #98658a;
+    margin-top: 15px;
+}
+
+.biodata-container {
+    text-align: center;
+}
+
+.biodata-details {
+    text-align: left;
+}
+
+.biodata-details td:first-child {
+    font-weight: bold;
+    color: #98658a;
+    width: 35%;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #49394b;
+    color: white;
+    margin-top: 50px;
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .flower img {
+        width: 230px;
+        height: 270px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .resume-container,
+    .biodata-container {
+        padding: 0 12px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .biodata-details {
+        overflow-x: auto;
+    }
+}
+
+@media print {
+    nav, footer, .page-header, .btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .biodata-container {
+        margin: 0;
+    }
+
+    .biodata-details {
+        box-shadow: none;
+    }
+}
